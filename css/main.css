@@ -68,6 +68,10 @@ body{
     justify-content: space-evenly;
     align-items: center;
     height: 200px;
+    
+}
+.abierto,.cerrado{
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
 }
 .abierto{
     background-color: #AFC8AD;
