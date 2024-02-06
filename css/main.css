@@ -199,7 +199,7 @@ body{
 }
   
 /*MEDIAS QUERIES*/
-@media screen and (max-width: 428px){
+@media screen and (max-width: 432px){
 h1{
     font-size: 1.5rem;
 }
@@ -270,5 +270,66 @@ main{
     }
     .horario{
         display: none;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    h2, p{
+        font-size: 1rem;
+    }
+    h3{
+        font-size: 1.25rem;
+    }
+    .navbar{
+        text-align: center;
+    }
+    
+    main{
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+    }
+      .horario{
+        display: none;
+      }
+      .text-presentacion{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .img-presentacion{
+        margin-top: 75px;
+        height: 250px;
+        width: 250px;
+    }
+    .informacion{
+        margin-top: 125px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .localizacion{
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer-style{
+        background-color: #AFC8AD;
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        text-align: center;
+    }
+    .iconsFlotante{
+        position: fixed;
+        bottom: 120px;
+        right: 5px;
     }
 }
