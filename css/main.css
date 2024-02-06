@@ -43,6 +43,9 @@ body{
     align-items: center;
     justify-content: space-around;
 }
+.text-presentacion h2{
+    font-size: 1rem;
+}
 .galery{
     display: flex;
     flex-direction: row;
@@ -103,6 +106,12 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+.informacion h3{
+    font-size: 1.5rem;
+}
+.informacion p{
+    font-size: 1rem;
+}
 .servicio, .nosotros{
     height: 300px;
     width: 600px;
@@ -162,6 +171,9 @@ body{
     justify-content: space-around;
     align-items: center;
 }
+.localizacion h4{
+    font-size: 1.75rem;
+}
 .maps{
     border-radius: 10px;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
@@ -175,6 +187,7 @@ body{
     align-items: center;
     height: 100px;
     font-size: 18px;
+    background-color: #AFC8AD;
 }
 .derechos{
     display: flex;
@@ -197,8 +210,13 @@ h2, p{
 h3{
     font-size: 1.25rem;
 }
+.navbar{
+    width: 600px;
+    text-align: center;
+}
 
 main{
+    width: 300px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -228,9 +246,9 @@ main{
     align-items: center;
 }
 .footer-style{
+    background-color: #AFC8AD;
     display: flex;
     flex-direction: column;
-    width: auto;
     font-size: 18px;
     text-align: center;
 }
@@ -241,3 +259,11 @@ main{
 }
 }
 
+@media screen and (max-width: 770px){
+    .navbar{
+        text-align: center;
+    }
+    .horario{
+        display: none;
+    }
+}
