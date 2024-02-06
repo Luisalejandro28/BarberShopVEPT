@@ -200,7 +200,7 @@ body{
 }
   
 /*MEDIAS QUERIES*/
-@media screen and (max-width: 600px){
+@media screen and (max-width: 328px){
 h1{
     font-size: 1.5rem;
 }
@@ -216,7 +216,7 @@ h3{
 }
 
 main{
-    width: 300px;
+    width: 600px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
