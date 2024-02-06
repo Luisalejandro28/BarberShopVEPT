@@ -27,7 +27,6 @@ body{
 .bar-navegation{
     font-weight: 200;
 }
-
 /*Main*/
 
 .text-presentacion{
@@ -218,6 +217,13 @@ h3{
 .navbar{
     width: 600px;
     text-align: center;
+}
+.galery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+    height: 428px;
 }
 
 main{
