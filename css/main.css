@@ -1,36 +1,47 @@
 *{
-    color: white;
+    color: black;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     list-style: none;
+    scrollbar-width: thin;
+    scroll-behavior:smooth;
 }
 a{
     text-decoration: none;
 }
 body{
-    background-color: black;
-    /* background: url("./img/logoVEPT.jpg"); */
+    background-color: white;
 }
+
 /*Barra de navegacion*/
-.bar-navegation{
-    /*border: solid 3px black;*/
-    padding: 1rem;
-    margin: 2rem;
+.logoBar{
+    height: 200px;
+    width: 200px;
 }
-.bar-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 20px;
+.navbar-nav{
+    font-size: 1.2rem;    
+}
+
+/* .bar-navegation{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 1;
+} */
+.bar-navegation:hover{
+    cursor: pointer;
 }
 /*Main*/
-.logoContainer{
+
+.text-presentacion{
+    height: 100px;
+    padding: 10px;
+    margin: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    justify-content: space-around;
 }
 .galery{
     display: flex;
@@ -39,22 +50,124 @@ body{
     width: auto;
     height: 600px;
 }
-section img {
+.galery img {
     width: 0;
     flex-grow: 1;
     object-fit: cover;
     opacity: .8;
     transition: .5s ease;
 }
-
-section img:hover{
-    cursor: crosshair;
-    width: 300px;
+.galery img:hover{
+    cursor: default;
+    width: 600px;
     opacity: 1;
     filter: contrast(120%);
 }
-/*Footer*/
+.horario{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+}
+.abierto{
+    background-color: #AFC8AD;
+}
+.cerrado{
+    background-color: #A6A9B6;
+}
 
+.horas{
+    height: 200px;
+}
+.dias{
+    height: 150px;
+    width: 150px;
+    border-radius: 15%;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.dias, h5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+.jornada{
+    font-size: 15px;
+    font-weight: bold;
+}
+.informacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.servicio, .nosotros{
+    height: 300px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.servicio, .nosotros, h1{
+   display: flex;
+   justify-content: center;
+   font-size: 1.5rem;
+}
+#btn-more{
+    display: none;
+}
+.iconsFlotante{
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+}
+
+.contacto a{
+    cursor: pointer;
+    margin: 15px;
+    border-radius: 50%;
+    background-color: white;
+    display: block;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+    transition: all 500ms ease;
+}
+
+.contacto a:hover{
+    background-color: #AFC8AD;
+}
+.btn-contacto{
+    text-align: center;
+    background-color: #AFC8AD;
+    color: black;
+    height: 40px;
+    width: 270px;
+    border-radius: 10px;
+}
+.btn-contacto:hover{
+    background-color: black;
+    color: #AFC8AD;
+}
+
+.localizacion{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.maps{
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+}
+
+/*Footer*/
 .footer-style{
     display: flex;
     flex-direction: row;
@@ -62,5 +175,69 @@ section img:hover{
     align-items: center;
     height: 100px;
     font-size: 18px;
+}
+.derechos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.autor{
+    font-size: 12px;
+}
+  
+/*MEDIAS QUERIES*/
+@media screen and (max-width: 600px){
+h1{
+    font-size: 1.5rem;
+}
+h2, p{
+    font-size: 1rem;
+}
+h3{
+    font-size: 1.25rem;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+}
+  .horario{
+    display: none;
+  }
+  .text-presentacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.informacion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.localizacion{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-style{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    font-size: 18px;
+    text-align: center;
+}
+.iconsFlotante{
+    position: fixed;
+    bottom: 120px;
+    right: 5px;
+}
 }
 
