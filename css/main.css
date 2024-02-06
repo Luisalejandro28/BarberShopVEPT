@@ -101,6 +101,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: #AFC8AD;
 }
 .informacion h3{
     font-size: 1.5rem;
